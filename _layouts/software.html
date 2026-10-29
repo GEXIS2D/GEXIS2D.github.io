@@ -13,14 +13,14 @@
   <a class="skip-link" href="#main">跳转到正文</a>
   <header class="topbar">
     <div class="nav-wrap">
-      <a class="brand" href="{{ '/' | relative_url }}"><img src="{{ '/assets/software/mark.svg' | relative_url }}" width="32" height="32" alt=""><span>GEXIS<span class="brand-accent">2D</span></span></a>
+      <a class="brand" href="{{ '/' | relative_url }}">GEXIS2D</a>
       <details class="mobile-menu"><summary>导航菜单</summary><nav aria-label="移动端导航">{% for item in site.data.software_nav %}<a href="{{ item.url | relative_url }}">{{ item.title }}</a>{% endfor %}<a href="{{ '/search/' | relative_url }}">搜索文档</a></nav></details>
       <nav class="desktop-nav" aria-label="主导航">{% for item in site.data.software_nav %}<a href="{{ item.url | relative_url }}" {% if page.url == item.url %}aria-current="page"{% endif %}>{{ item.title }}</a>{% endfor %}</nav>
       <a class="search-link" href="{{ '/search/' | relative_url }}" aria-label="搜索文档">⌕ <span>搜索</span></a>
-      <a class="github-link" href="https://github.com/GEXIS2D/GEXIS2D.github.io">GitHub ↗</a>
+      <a class="github-link" href="https://github.com/GEXIS2D/GEXIS2D.github.io">GitHub</a>
     </div>
   </header>
   <main id="main" tabindex="-1">{{ content }}</main>
-  <footer class="footer"><div class="container footer-inner"><div><a class="footer-brand" href="{{ '/' | relative_url }}">GEXIS2D</a><p>项目展示 · 学习资源 · 技术文档</p></div><nav aria-label="页脚导航"><a href="{{ '/research/' | relative_url }}">原研究页面</a><a href="{{ '/publications/' | relative_url }}">论文资料</a><a href="{{ '/people/' | relative_url }}">团队资料</a><a href="{{ '/contribute/' | relative_url }}">参与贡献</a></nav><p class="footer-note">文档持续建设中<br>Hosted on GitHub Pages</p></div></footer>
+  <footer class="footer"><div class="container footer-inner"><span>GEXIS2D</span><nav aria-label="页脚导航"><a href="{{ '/research/' | relative_url }}">研究</a><a href="{{ '/publications/' | relative_url }}">论文</a><a href="{{ '/people/' | relative_url }}">团队</a></nav><span class="footer-note">GitHub Pages</span></div></footer>
 </body>
 </html>
