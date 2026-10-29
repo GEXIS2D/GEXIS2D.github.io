@@ -1,24 +1,23 @@
 ---
 layout: guide
 title: Tutorials
-kicker: LEARN BY EXAMPLE
-description: 教程与算例：为可复现的学习过程预留清晰入口。
+description: Tutorials and examples for a reproducible learning workflow.
 permalink: /tutorials/
 ---
 
-> **算例尚未发布。** 以下是教程栏目结构，不代表软件已经实现某项功能。
+> **Examples are not yet available.** The entries below describe the planned documentation structure, not implemented software capabilities.
 
-## 教程目录
+## Tutorial index
 
-| 教程位置 | 计划收录的内容 | 状态 |
+| Tutorial | Planned content | Status |
 | --- | --- | --- |
-| 第一个模型 | 最小输入与完整运行流程 | 待补充 |
-| 模型设置 | 几何、材料、边界条件与计算设置 | 待补充 |
-| 结果分析 | 输出文件说明与可视化步骤 | 待补充 |
-| 进阶算例 | 经验证的模型与对比结果 | 待补充 |
+| First model | Minimal input and a complete workflow | In preparation |
+| Model setup | Geometry, materials, boundary conditions and solver settings | In preparation |
+| Results | Output files and visualization | In preparation |
+| Further examples | Verified models and reference comparisons | In preparation |
 
-## 单个教程的组织方式
+## Tutorial format
 
-后续每个教程将包括问题定义、所需文件、操作步骤、结果检查及参考资料，便于学习与复现。
+Each tutorial will include a problem definition, required files, step-by-step instructions, result checks and references.
 
-[返回入门指南 →]({{ '/getting-started/' | relative_url }})
+[Getting Started →]({{ '/getting-started/' | relative_url }})

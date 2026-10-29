@@ -15,7 +15,7 @@
   input.addEventListener('input', function () {
     const matches = searchPages(pages, input.value);
     results.replaceChildren();
-    status.textContent = input.value.trim() ? (matches.length ? '找到 ' + matches.length + ' 个栏目' : '没有匹配结果，请尝试其他关键词。') : '输入栏目名称或中文关键词，例如 Tutorials、入门、理论。';
+    status.textContent = input.value.trim() ? (matches.length ? matches.length + (matches.length === 1 ? ' section found' : ' sections found') : 'No matching sections. Try another keyword.') : 'Enter a section title or keyword, such as installation, tutorials or theory.';
     matches.forEach(function (page) {
       const li = document.createElement('li');
       const link = document.createElement('a');

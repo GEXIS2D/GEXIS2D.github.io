@@ -1,4 +1,4 @@
-:root{--ink:#343d44;--muted:#70797f;--accent:#506b7c;--nav:#526573;--line:#e4e7e9;--paper:#f6f7f8}
+:root{--ink:#193241;--muted:#657781;--accent:#276b7c;--nav:#203f52;--line:#e4e7e9;--paper:#f6f7f8}
 *{box-sizing:border-box}
 body{margin:0;background:#fff;color:var(--ink);font:15px/1.8 -apple-system,BlinkMacSystemFont,"Segoe UI","Microsoft YaHei",sans-serif}
 a{color:var(--accent);text-decoration:none}a:hover{text-decoration:underline;text-underline-offset:4px}
@@ -13,7 +13,7 @@ a:focus-visible,summary:focus-visible,input:focus-visible{outline:2px solid var(
 .desktop-nav a[aria-current]{text-decoration:underline;text-underline-offset:7px}
 .search-link,.github-link{font-size:13px;white-space:nowrap}.search-link{margin-left:8px}.mobile-menu{display:none}
 main{min-height:calc(100vh - 145px)}.home-page{padding-bottom:64px}
-.project-intro{text-align:center;padding:65px 0 56px}
+.project-intro{text-align:center;padding:0 0 42px}
 .project-intro h1{font-size:56px;font-weight:500;letter-spacing:2px;color:#526b7b;line-height:1.3;margin:0 0 16px}.project-intro h1 span{color:#818d95}
 .project-subtitle{font-size:22px;font-weight:400;margin:0 0 14px;color:#50585e}.project-status{font-size:13px;color:var(--muted);margin:0}
 .home-docs h2{font-size:20px;font-weight:500;margin:0 0 12px;padding-bottom:12px;border-bottom:1px solid var(--line)}
@@ -41,4 +41,9 @@ main{min-height:calc(100vh - 145px)}.home-page{padding-bottom:64px}
 .search-results a{display:block;padding:15px 0;text-decoration:none}.search-results strong{font-weight:500}.search-results p{margin:3px 0 0;color:var(--muted);font-size:13px}
 @media(max-width:1000px){.desktop-nav{gap:16px;font-size:12px}.nav-wrap{gap:18px}.github-link{display:none}}
 @media(max-width:800px){.desktop-nav{display:none}.mobile-menu{display:block;margin-left:auto}.mobile-menu summary{cursor:pointer;padding:8px;font-size:13px}.mobile-menu nav{position:absolute;top:62px;left:0;right:0;padding:12px 24px;background:var(--nav);border-top:1px solid #ffffff30}.mobile-menu nav a{display:block;padding:8px}.guide-grid{grid-template-columns:165px minmax(0,1fr);gap:30px}.doc-end{flex-direction:column;gap:6px}}
-@media(max-width:560px){.container,.nav-wrap{width:calc(100% - 36px)}.nav-wrap{gap:12px;height:58px}.mobile-menu nav{top:58px}.brand{font-size:17px}.search-link{margin:0}.search-link span{display:none}.project-intro{padding:48px 0 42px}.project-intro h1{font-size:43px}.project-subtitle{font-size:19px}.project-status{font-size:12px}.home-links{grid-template-columns:1fr}.home-links>a{padding:16px 2px}.home-docs h2{font-size:19px}.home-docs h2>span{font-size:12px}.home-page{padding-bottom:40px}.footer-inner{gap:18px;flex-wrap:wrap;padding:20px 0;min-height:70px}.footer nav{gap:16px}.footer-note{font-size:10px}.guide-grid{display:block;padding-top:22px;padding-bottom:45px}.sidebar{position:static;display:flex;overflow:auto;gap:6px;border:0;border-bottom:1px solid var(--line);padding:0 0 12px;margin-bottom:24px}.sidebar a{white-space:nowrap;padding:6px;font-size:11px}.sidebar-home,.sidebar small{display:none!important}.document h1{font-size:29px}}
+@media(max-width:560px){.container,.nav-wrap{width:calc(100% - 36px)}.nav-wrap{gap:12px;height:58px}.mobile-menu nav{top:58px}.brand{font-size:17px}.search-link{margin:0}.search-link span{display:none}.project-intro{padding:0 0 34px}.project-intro h1{font-size:43px}.project-subtitle{font-size:19px}.project-status{font-size:12px}.home-links{grid-template-columns:1fr}.home-links>a{padding:16px 2px}.home-docs h2{font-size:19px}.home-docs h2>span{font-size:12px}.home-page{padding-bottom:40px}.footer-inner{gap:18px;flex-wrap:wrap;padding:20px 0;min-height:70px}.footer nav{gap:16px}.footer-note{font-size:10px}.guide-grid{display:block;padding-top:22px;padding-bottom:45px}.sidebar{position:static;display:flex;overflow:auto;gap:6px;border:0;border-bottom:1px solid var(--line);padding:0 0 12px;margin-bottom:24px}.sidebar a{white-space:nowrap;padding:6px;font-size:11px}.sidebar-home,.sidebar small{display:none!important}.document h1{font-size:29px}}
+
+.project-logo{display:block;width:400px;max-width:100%;height:auto;margin:0 auto -80px}
+.visually-hidden{position:absolute!important;width:1px!important;height:1px!important;padding:0!important;margin:-1px!important;overflow:hidden!important;clip:rect(0,0,0,0)!important;white-space:nowrap!important;border:0!important}
+.home-links h3 span{color:#47858c}
+@media(max-width:560px){.project-logo{margin-bottom:-55px}.project-status{max-width:300px;margin-inline:auto}}

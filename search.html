@@ -1,12 +1,12 @@
 ---
 layout: guide
-title: 搜索文档
-description: 按栏目名称或中文关键词查找网站内容。
+title: Search
+description: Find documentation sections by title or keyword.
 permalink: /search/
 ---
-<label class="search-label" for="doc-search">查找栏目</label>
-<input id="doc-search" class="search-input" type="search" placeholder="搜索入门、教程、理论……" autocomplete="off">
-<p id="search-status" role="status">输入栏目名称或中文关键词，例如 Tutorials、入门、理论。</p>
+<label class="search-label" for="doc-search">Search sections</label>
+<input id="doc-search" class="search-input" type="search" placeholder="Search installation, tutorials, theory…" autocomplete="off">
+<p id="search-status" role="status">Enter a section title or keyword, such as installation, tutorials or theory.</p>
 <ul id="search-results" class="search-results"></ul>
-<noscript><p>搜索需要启用 JavaScript。也可以使用左侧文档目录直接浏览。</p></noscript>
+<noscript><p>Enable JavaScript to search, or browse the documentation navigation.</p></noscript>
 <script type="application/json" id="search-index">[{% for item in site.data.software_nav %}{"title":{{ item.title | jsonify }},"label":{{ item.label | jsonify }},"description":{{ item.description | jsonify }},"url":{{ item.url | relative_url | jsonify }}}{% unless forloop.last %},{% endunless %}{% endfor %}]</script>

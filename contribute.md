@@ -1,36 +1,35 @@
 ---
 layout: guide
 title: Contribute
-kicker: BUILD THE KNOWLEDGE BASE
-description: 参与网站维护、补充文档，帮助项目资料持续完善。
+description: Help maintain the website and improve project documentation.
 permalink: /contribute/
 ---
 
-## 参与网站建设
+## Contribute to the website
 
-本网站的源码托管于 [GEXIS2D/GEXIS2D.github.io](https://github.com/GEXIS2D/GEXIS2D.github.io)。可以通过 Pull Request 提交页面改进、文字修正和资料补充。
+Website source is hosted at [GEXIS2D/GEXIS2D.github.io](https://github.com/GEXIS2D/GEXIS2D.github.io). Submit a pull request to propose corrections, page improvements or documentation.
 
-## 修改页面
+## Edit a page
 
-网站沿用 Jekyll，正文使用 Markdown。各栏目对应以下文件：
+The website uses Jekyll with Markdown content.
 
-| 页面 | 源文件 |
+| Page | Source file |
 | --- | --- |
-| 首页 | `index.md` |
-| 入门指南 | `getting-started.md` |
-| 教程与算例 | `tutorials.md` |
-| 理论基础 | `theory.md` |
-| 技术文档 | `documentation.md` |
-| 参与贡献 | `contribute.md` |
+| Home | `index.md` |
+| Getting Started | `getting-started.md` |
+| Tutorials | `tutorials.md` |
+| Theory | `theory.md` |
+| Documentation | `documentation.md` |
+| Contribute | `contribute.md` |
 
-维护时保留文件顶部的页面配置，在正文区域补充资料。栏目名称、说明和链接由 `_data/software_nav.yml` 管理，导航和栏目搜索会一同更新。
+Keep the configuration block at the top of each file and edit the content below it. Section titles, descriptions and links are maintained in `_data/software_nav.yml`, which also supplies navigation and section search.
 
-## 提交内容前
+## Before submitting
 
-- 检查页面链接、图片与代码片段。
-- 标明资料来源与适用的软件版本。
-- 发布教程时附上可复现的输入和预期输出。
+- Check links, images and code snippets.
+- Identify sources and the relevant software version.
+- Include reproducible inputs and expected outputs with tutorials.
 
-## 页面与资源
+## Layouts and assets
 
-新版布局位于 `_layouts/software.html` 和 `_layouts/guide.html`，样式与脚本位于 `assets/software/`。原有页面、布局和图片资源继续保留。
+Page layouts are in `_layouts/software.html` and `_layouts/guide.html`. Styles, scripts and the project logo are in `assets/software/`. Existing pages and research assets are retained.

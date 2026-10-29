@@ -1,20 +1,20 @@
 - title: Getting Started
-  label: 入门指南
+  label: Installation and first steps
   url: /getting-started/
-  description: 网站导览、软件获取与安装文档状态
+  description: Project overview, software access and installation guidance
 - title: Tutorials
-  label: 教程与算例
+  label: Tutorials and examples
   url: /tutorials/
-  description: 算例组织、复现流程与结果检查
+  description: Example models, workflows and result checks
 - title: Theory
-  label: 理论基础
+  label: Models and numerical methods
   url: /theory/
-  description: 理论文档目录与研究资料入口
+  description: Model assumptions, governing equations and numerical methods
 - title: Documentation
-  label: 技术文档
+  label: Technical reference
   url: /documentation/
-  description: 文档索引、版本信息与项目资源
+  description: Documentation index, version information and project resources
 - title: Contribute
-  label: 参与贡献
+  label: Contributing to the project
   url: /contribute/
-  description: 网站维护、反馈与内容贡献
+  description: Website maintenance, feedback and documentation contributions
