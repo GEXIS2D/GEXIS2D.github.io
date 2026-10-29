@@ -6,7 +6,7 @@
   <title>{% if page.title %}{{ page.title | escape }} · {% endif %}GEXIS2D</title>
   <meta name="description" content="{{ page.description | default: site.description | escape }}">
   <link rel="icon" href="{{ '/assets/software/mark.svg' | relative_url }}" type="image/svg+xml">
-  <link rel="stylesheet" href="{{ '/assets/software/site.css' | relative_url }}?v=20261029-wheel">
+  <link rel="stylesheet" href="{{ '/assets/software/site.css' | relative_url }}?v=20261029-nav">
   <script src="{{ '/assets/software/search.js' | relative_url }}?v=20261029-english" defer></script>
 </head>
 <body>
@@ -21,6 +21,8 @@
     </div>
   </header>
   <main id="main" tabindex="-1">{{ content }}</main>
+  {% unless page.url == "/" %}
   <footer class="footer"><div class="container footer-inner"><span>GEXIS2D</span><nav aria-label="Footer navigation"><a href="{{ '/research/' | relative_url }}">Research</a><a href="{{ '/publications/' | relative_url }}">Publications</a><a href="{{ '/people/' | relative_url }}">Team</a></nav><span class="footer-note">GitHub Pages</span></div></footer>
+  {% endunless %}
 </body>
 </html>
