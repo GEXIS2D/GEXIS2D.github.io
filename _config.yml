@@ -13,13 +13,13 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Pin ZHANG Group
+title: GEXIS2D
 email: 
-description: >- # this means to ignore newlines until "baseurl:"  
+description: GEXIS2D 项目网站与文档入口，汇集入门指南、教程、理论与技术资料。
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://gexis2d.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 linkedin_username: pin-zhang-086579278
-github_username:  PinZhang3
+github_username: GEXIS2D
 
 # Build settings
 markdown: kramdown
@@ -27,6 +27,9 @@ theme: minima
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
+
+exclude:
+  - tests
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list

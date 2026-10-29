@@ -1,0 +1,20 @@
+- title: Getting Started
+  label: 入门指南
+  url: /getting-started/
+  description: 网站导览、软件获取与安装文档状态
+- title: Tutorials
+  label: 教程与算例
+  url: /tutorials/
+  description: 算例组织、复现流程与结果检查
+- title: Theory
+  label: 理论基础
+  url: /theory/
+  description: 理论文档目录与研究资料入口
+- title: Documentation
+  label: 技术文档
+  url: /documentation/
+  description: 文档索引、版本信息与项目资源
+- title: Contribute
+  label: 参与贡献
+  url: /contribute/
+  description: 网站维护、反馈与内容贡献
