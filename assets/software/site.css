@@ -48,4 +48,4 @@ main{min-height:calc(100vh - 145px)}.home-page{padding-bottom:64px}
 .home-links h3 span{color:#47858c}
 @media(max-width:560px){.project-logo{margin-bottom:-55px}.project-status{max-width:300px;margin-inline:auto}}
 
-.example-section{margin:0 0 44px}.example-section h2{font-size:20px;font-weight:500;margin:0 0 20px;padding-bottom:12px;border-bottom:1px solid var(--line)}.example-video{display:block;width:100%;max-width:760px;height:auto;margin:0 auto;background:#f6f7f8}.example-video:focus-visible{outline:2px solid var(--accent);outline-offset:4px}
+.example-section{margin:0 0 44px}.example-section h2{text-align:center;font-size:20px;font-weight:500;margin:0 0 20px;padding-bottom:12px;border-bottom:1px solid var(--line)}.example-video{display:block;width:100%;max-width:600px;height:auto;margin:0 auto;background:#f6f7f8}.example-video:focus-visible{outline:2px solid var(--accent);outline-offset:4px}
