@@ -49,3 +49,5 @@ main{min-height:calc(100vh - 145px)}.home-page{padding-bottom:64px}
 @media(max-width:560px){.project-logo{margin-bottom:-55px}.project-status{max-width:300px;margin-inline:auto}}
 
 .example-section{margin:0 0 44px}.example-section h2{text-align:center;font-size:20px;font-weight:500;margin:0 0 20px;padding-bottom:12px;border-bottom:1px solid var(--line)}.example-video{display:block;width:100%;max-width:600px;height:auto;margin:0 auto;background:#f6f7f8}.example-video:focus-visible{outline:2px solid var(--accent);outline-offset:4px}
+
+.examples-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:32px;align-items:start}.examples-grid .example-video{max-width:none;aspect-ratio:16/9;object-fit:contain;background:#fff}.examples-grid .example-section{min-width:0}@media(max-width:640px){.examples-grid{grid-template-columns:1fr;gap:12px}}
