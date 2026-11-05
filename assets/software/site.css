@@ -7,7 +7,7 @@ a:focus-visible,summary:focus-visible,input:focus-visible{outline:2px solid var(
 .skip-link{position:fixed;top:-100px;left:16px;z-index:20;background:white;padding:8px 14px}.skip-link:focus{top:8px}
 .topbar{background:var(--nav);color:white;position:sticky;top:0;z-index:10}
 .nav-wrap{max-width:1160px;width:calc(100% - 64px);height:62px;margin:auto;display:flex;align-items:center;gap:24px}
-.topbar a{color:#fff}.brand{font-size:20px;font-weight:700;letter-spacing:.3px;white-space:nowrap}
+.topbar a{color:#fff}.desktop-nav,.search-link,.github-link,.mobile-menu{font-weight:600}.brand{font-size:20px;font-weight:700;letter-spacing:.3px;white-space:nowrap}
 .topbar a:focus-visible,.topbar summary:focus-visible{outline-color:#fff}
 .desktop-nav{display:flex;gap:25px;margin-left:auto;font-size:16px;line-height:1.5}.desktop-nav a{padding:18px 0}
 .desktop-nav a[aria-current]{text-decoration:underline;text-underline-offset:7px}
