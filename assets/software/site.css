@@ -57,3 +57,30 @@ main{min-height:calc(100vh - 145px)}.home-page{padding-bottom:64px}
 .brand-logo{display:block;position:relative;flex-shrink:0;width:150px;height:41px;overflow:hidden;background:#fff}.brand-logo img{display:block;width:175px;max-width:none;height:175px;position:absolute;left:-13px;top:-62px}@media(max-width:1000px){.brand-logo{width:125px;height:35px}.brand-logo img{width:147px;height:147px;left:-11px;top:-52px}}
 
 .brand-logo{background:var(--nav)}.brand-logo img{mix-blend-mode:lighten}
+
+.project-about {
+  max-width: 900px;
+  margin: 0 auto 48px;
+  text-align: left;
+}
+.project-about h2 {
+  margin: 0 0 20px;
+  color: var(--ink);
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.4;
+  letter-spacing: -0.25px;
+}
+.project-about p {
+  margin: 0 0 18px;
+  color: #415660;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.8;
+}
+.project-about p:last-child { margin-bottom: 0; }
+.project-about strong { color: var(--ink); font-weight: 600; }
+@media (max-width: 560px) {
+  .project-about { margin-bottom: 36px; }
+  .project-about h2 { margin-bottom: 16px; font-size: 22px; }
+}
