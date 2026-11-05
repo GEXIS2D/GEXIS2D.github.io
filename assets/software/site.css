@@ -184,7 +184,7 @@ main{min-height:calc(100vh - 145px)}.home-page{padding-bottom:64px}
 .case-columns .case-empty{display:grid;place-items:center;height:220px;padding:16px;font-size:14px}
 .case-columns .case-links{padding-top:0;margin-top:20px}
 .case-columns .case-links li{margin-bottom:12px}
-.case-columns .case-links a{font-size:16px;font-weight:600;color:var(--ink)}
+.case-columns .case-links li{font-size:16px;font-weight:600;color:var(--ink)}
 @media(max-width:850px){.case-columns{grid-template-columns:1fr;gap:36px}.category-title{min-height:0;justify-content:flex-start;text-align:left;margin-bottom:18px}.case-columns .example-video,#case-biaxial-test .example-video{height:240px}.case-columns .case-links{margin-top:16px}}
 
 @media(min-width:851px) and (max-width:1000px){.category-title{font-size:15px;gap:6px}.category-title .category-icon{width:18px;height:18px;flex-basis:18px}}
@@ -203,7 +203,7 @@ main{min-height:calc(100vh - 145px)}.home-page{padding-bottom:64px}
 
 /* Bring the equally scaled models closer to their category headings. */
 .case-columns .category-title{margin-bottom:8px}
-.case-columns .example-section{grid-template-columns:minmax(0,1fr);grid-template-rows:calc(var(--model-height) * 1.2770701 + 4px) 31px}
+.case-columns .example-section{grid-template-columns:minmax(0,1fr);grid-template-rows:calc(var(--model-height) * 1.2770701 + 4px)}
 .case-columns .example-video,#case-biaxial-test .example-video{justify-self:center;margin-inline:0}
 
 .contributors-page{max-width:900px;padding-top:52px;padding-bottom:72px}
