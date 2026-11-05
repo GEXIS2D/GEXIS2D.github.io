@@ -192,3 +192,11 @@ main{min-height:calc(100vh - 145px)}.home-page{padding-bottom:64px}
 .case-columns .example-section{display:grid;grid-template-rows:220px 31px;align-items:start}
 .case-columns .example-section h3{align-self:end;margin:0;line-height:21px}
 @media(max-width:850px){.case-columns .example-section{grid-template-rows:240px 31px}}
+
+/* Scale the actual soil models to a common height, accounting for source margins. */
+.case-columns{--model-height:clamp(110px,13vw,130px)}
+.case-columns .example-video,#case-biaxial-test .example-video{width:auto;max-width:none;align-self:end;object-fit:contain}
+#case-excavation .example-video{height:calc(var(--model-height) * 1.0018622)}
+#case-soil-wheel-interaction .example-video{height:calc(var(--model-height) * 1.2770701)}
+#case-biaxial-test .example-video{height:calc(var(--model-height) * 1.0029326)}
+@media(max-width:850px){.case-columns{--model-height:clamp(110px,36vw,150px)}}
