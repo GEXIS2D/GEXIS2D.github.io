@@ -1,7 +1,7 @@
-- title: Getting Started
-  label: Installation and first steps
-  url: /getting-started/
-  description: Project overview, software access and installation guidance
+- title: Download
+  label: Software download
+  url: /download/
+  description: Download GEXIS software
 - title: Tutorials
   label: Tutorials and examples
   url: /tutorials/
