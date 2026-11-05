@@ -176,13 +176,15 @@ main{min-height:calc(100vh - 145px)}.home-page{padding-bottom:64px}
 /* All three application categories are visible together. */
 .case-columns{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:32px;align-items:start}
 .case-columns .case-panel{min-width:0;min-height:0;padding-top:0}
-.category-title{display:flex;align-items:center;justify-content:center;gap:9px;min-height:72px;margin:0 0 20px;padding-bottom:14px;border-bottom:1px solid var(--line);font-size:18px;font-weight:700;line-height:1.4;text-align:center}
-.category-title .category-icon{color:var(--accent)}
+.category-title{display:flex;align-items:center;justify-content:center;gap:7px;min-height:44px;margin:0 0 18px;padding-bottom:14px;border-bottom:1px solid var(--line);font-size:16px;font-weight:700;line-height:1.4;text-align:center;white-space:nowrap}
+.category-title .category-icon{color:var(--accent);width:20px;height:20px;flex-basis:20px}
 .case-columns .case-showcase{display:block}
-.case-columns .example-section h3{font-size:17px;margin-bottom:12px}
+.case-columns .example-section h3{font-size:14px;font-weight:400;line-height:1.5;color:var(--muted);margin:10px 0 0}
 .case-columns .example-video,#case-biaxial-test .example-video{width:100%;height:220px;max-width:100%;object-fit:contain;background:#fff}
 .case-columns .case-empty{display:grid;place-items:center;height:220px;padding:16px;font-size:14px}
 .case-columns .case-links{padding-top:0;margin-top:20px}
 .case-columns .case-links li{margin-bottom:12px}
-.case-columns .case-links button{font-size:16px}
-@media(max-width:700px){.case-columns{grid-template-columns:1fr;gap:36px}.category-title{min-height:0;justify-content:flex-start;text-align:left;margin-bottom:18px}.case-columns .example-video,#case-biaxial-test .example-video{height:240px}.case-columns .case-links{margin-top:16px}}
+.case-columns .case-links a{font-size:16px;font-weight:600;color:var(--ink)}
+@media(max-width:850px){.case-columns{grid-template-columns:1fr;gap:36px}.category-title{min-height:0;justify-content:flex-start;text-align:left;margin-bottom:18px}.case-columns .example-video,#case-biaxial-test .example-video{height:240px}.case-columns .case-links{margin-top:16px}}
+
+@media(min-width:851px) and (max-width:1000px){.category-title{font-size:15px;gap:6px}.category-title .category-icon{width:18px;height:18px;flex-basis:18px}}
