@@ -193,17 +193,17 @@ main{min-height:calc(100vh - 145px)}.home-page{padding-bottom:64px}
 .case-columns .example-section h3{align-self:end;margin:0;line-height:21px}
 @media(max-width:850px){.case-columns .example-section{grid-template-rows:240px 31px}}
 
-/* Scale the actual soil models to a common height, accounting for source margins. */
+/* Account for source margins when sizing the model videos. */
 .case-columns{--model-height:clamp(140px,16vw,160px)}
 .case-columns .example-video,#case-biaxial-test .example-video{width:auto;max-width:none;align-self:end;object-fit:contain}
 #case-excavation .example-video{height:calc(var(--model-height) * 1.0018622)}
-#case-soil-wheel-interaction .example-video{height:calc(var(--model-height) * 1.2770701)}
+#case-soil-wheel-interaction .example-video{height:calc(var(--model-height) * 1.1174363)}
 #case-biaxial-test .example-video{height:calc(var(--model-height) * 1.0029326)}
 @media(max-width:850px){.case-columns{--model-height:clamp(130px,43vw,180px)}}
 
-/* Bring the equally scaled models closer to their category headings. */
-.case-columns .category-title{margin-bottom:8px}
-.case-columns .example-section{grid-template-columns:minmax(0,1fr);grid-template-rows:calc(var(--model-height) * 1.2770701 + 4px)}
+/* Keep the model bases aligned and close to their category headings. */
+.case-columns .category-title{margin-bottom:4px}
+.case-columns .example-section{grid-template-columns:minmax(0,1fr);grid-template-rows:calc(var(--model-height) * 1.1174363 + 4px)}
 .case-columns .example-video,#case-biaxial-test .example-video{justify-self:center;margin-inline:0}
 
 .contributors-page{max-width:900px;padding-top:52px;padding-bottom:72px}
