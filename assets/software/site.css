@@ -156,5 +156,11 @@ main{min-height:calc(100vh - 145px)}.home-page{padding-bottom:64px}
 .case-links{padding-top:43px}
 .case-links ul{margin:0;padding-left:22px}
 .case-links li{padding-left:4px;margin:0 0 22px;color:var(--ink)}
-.case-links a{color:var(--ink);font-size:18px;font-weight:700;line-height:1.5}
-@media(max-width:760px){.case-showcase{grid-template-columns:1fr;gap:24px}.case-links{padding-top:0}.case-links li{margin-bottom:14px}.case-links a{font-size:17px}}
+.case-links button{color:var(--ink);font-size:18px;font-weight:700;line-height:1.5}
+@media(max-width:760px){.case-showcase{grid-template-columns:1fr;gap:24px}.case-links{padding-top:0}.case-links li{margin-bottom:14px}.case-links button{font-size:17px}}
+
+.case-stage{min-width:0}.case-view[hidden]{display:none}
+.case-links button{border:0;padding:0;background:transparent;font-family:inherit;text-align:left;cursor:pointer}
+.case-links button:hover{color:var(--accent);text-decoration:underline;text-underline-offset:4px}
+.case-links button[aria-pressed="true"]{color:var(--accent)}
+.case-links button:focus-visible{outline:2px solid var(--accent);outline-offset:4px}

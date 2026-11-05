@@ -12,7 +12,7 @@
       tab.tabIndex = active ? 0 : -1;
       panels[i].hidden = !active;
       panels[i].querySelectorAll('video').forEach(function (video) {
-        if (!active) {
+        if (!active || video.closest('.case-view[hidden]')) {
           video.pause();
         } else {
           const playback = video.play();
@@ -34,6 +34,27 @@
       else return;
       event.preventDefault();
       activate(next, true);
+    });
+  });
+
+  panels.forEach(function (panel) {
+    const selectors = Array.from(panel.querySelectorAll('[data-case-target]'));
+    selectors.forEach(function (selector) {
+      selector.addEventListener('click', function () {
+        selectors.forEach(function (item) {
+          const selected = item === selector;
+          item.setAttribute('aria-pressed', String(selected));
+          const view = document.getElementById(item.dataset.caseTarget);
+          view.hidden = !selected;
+          view.querySelectorAll('video').forEach(function (video) {
+            if (!selected) video.pause();
+            else {
+              const playback = video.play();
+              if (playback && typeof playback.catch === 'function') playback.catch(function () {});
+            }
+          });
+        });
+      });
     });
   });
 
