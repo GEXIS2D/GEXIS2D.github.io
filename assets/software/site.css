@@ -85,21 +85,67 @@ main{min-height:calc(100vh - 145px)}.home-page{padding-bottom:64px}
   .project-about h2 { margin-bottom: 16px; font-size: 22px; }
 }
 
-.case-browser { margin: 0 0 40px; }
-.case-browser > h2 { margin: 0 0 24px; color: var(--ink); font-size: 24px; font-weight: 500; line-height: 1.4; }
-.case-tablist { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
-.case-tablist button { min-height: 60px; padding: 12px 16px; border: 1px solid #b9c8cf; border-radius: 2px; background: #fff; color: var(--accent); font: inherit; font-size: 15px; font-weight: 500; line-height: 1.5; cursor: pointer; }
-.case-tablist button:hover { background: #f0f4f5; border-color: var(--accent); }
-.case-tablist button[aria-selected="true"] { background: var(--nav); border-color: var(--nav); color: #fff; }
-.case-tablist button:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
-.case-panel { min-height: 430px; padding-top: 30px; }
+.home-page { max-width: 900px; }
+.home-page .project-intro { padding-bottom: 36px; }
+.case-browser { width: 100%; margin: 0 auto 48px; }
+.case-browser > h2 {
+  margin: 0 0 14px;
+  color: var(--ink);
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.4;
+  letter-spacing: -0.25px;
+}
+.case-tablist {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+  border-bottom: 1px solid var(--line);
+}
+.case-tablist button {
+  min-height: 58px;
+  margin-bottom: -1px;
+  padding: 13px 0;
+  border: 0;
+  border-bottom: 2px solid transparent;
+  border-radius: 0;
+  background: transparent;
+  color: #647780;
+  font: inherit;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.5;
+  cursor: pointer;
+}
+.case-tablist button:hover { color: var(--accent); }
+.case-tablist button[aria-selected="true"] {
+  color: var(--ink);
+  border-bottom-color: #317b87;
+  font-weight: 600;
+}
+.case-tablist button:focus-visible { outline: 2px solid var(--accent); outline-offset: -4px; }
+.case-panel { min-height: 360px; padding-top: 28px; }
 .case-panel[hidden] { display: none; }
 .case-panel .single-case { grid-template-columns: 1fr; max-width: 600px; margin-inline: auto; }
-.case-panel .example-section h3 { margin: 0 0 20px; padding-bottom: 12px; border-bottom: 1px solid var(--line); text-align: center; font-size: 20px; font-weight: 500; }
-.case-empty { margin: 0; padding: 44px 16px; color: var(--muted); text-align: center; font-size: 15px; }
+.case-panel .example-section { margin-bottom: 0; }
+.case-panel .example-section h3 {
+  margin: 0 0 18px;
+  text-align: center;
+  color: #415660;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.5;
+}
+.case-empty { margin: 0; padding: 64px 16px; color: var(--muted); text-align: center; font-size: 15px; }
+@media (max-width: 760px) {
+  .case-tablist { gap: 12px; }
+  .case-tablist button { font-size: 14px; }
+}
 @media (max-width: 560px) {
-  .case-browser > h2 { font-size: 22px; margin-bottom: 20px; }
-  .case-tablist { grid-template-columns: 1fr; gap: 8px; }
-  .case-tablist button { min-height: 48px; padding: 10px 12px; }
-  .case-panel { min-height: 260px; padding-top: 24px; }
+  .case-browser > h2 { font-size: 22px; margin-bottom: 10px; }
+  .case-tablist { gap: 8px; }
+  .case-tablist button { min-height: 78px; padding: 10px 2px; font-size: 13px; }
+  .case-panel { min-height: 240px; padding-top: 24px; }
+  .case-panel .example-section h3 { font-size: 17px; }
+  .case-empty { padding: 48px 8px; font-size: 14px; }
 }
