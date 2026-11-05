@@ -172,3 +172,17 @@ main{min-height:calc(100vh - 145px)}.home-page{padding-bottom:64px}
 
 #case-biaxial-test .example-video{width:auto;max-width:100%;height:320px;object-fit:contain;background:#fff}
 @media(max-width:560px){#case-biaxial-test .example-video{height:280px}}
+
+/* All three application categories are visible together. */
+.case-columns{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:32px;align-items:start}
+.case-columns .case-panel{min-width:0;min-height:0;padding-top:0}
+.category-title{display:flex;align-items:center;justify-content:center;gap:9px;min-height:72px;margin:0 0 20px;padding-bottom:14px;border-bottom:1px solid var(--line);font-size:18px;font-weight:700;line-height:1.4;text-align:center}
+.category-title .category-icon{color:var(--accent)}
+.case-columns .case-showcase{display:block}
+.case-columns .example-section h3{font-size:17px;margin-bottom:12px}
+.case-columns .example-video,#case-biaxial-test .example-video{width:100%;height:220px;max-width:100%;object-fit:contain;background:#fff}
+.case-columns .case-empty{display:grid;place-items:center;height:220px;padding:16px;font-size:14px}
+.case-columns .case-links{padding-top:0;margin-top:20px}
+.case-columns .case-links li{margin-bottom:12px}
+.case-columns .case-links button{font-size:16px}
+@media(max-width:700px){.case-columns{grid-template-columns:1fr;gap:36px}.category-title{min-height:0;justify-content:flex-start;text-align:left;margin-bottom:18px}.case-columns .example-video,#case-biaxial-test .example-video{height:240px}.case-columns .case-links{margin-top:16px}}
