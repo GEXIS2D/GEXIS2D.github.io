@@ -14,7 +14,7 @@
   label: Technical reference
   url: /documentation/
   description: Documentation index, version information and project resources
-- title: Contribute
-  label: Contributing to the project
+- title: Developers
+  label: Software developers
   url: /contribute/
-  description: Website maintenance, feedback and documentation contributions
+  description: GEXIS software developers and affiliations
