@@ -6,14 +6,14 @@
   <title>{% if page.title %}{{ page.title | escape }} · {% endif %}GEXIS2D</title>
   <meta name="description" content="{{ page.description | default: site.description | escape }}">
   <link rel="icon" href="{{ '/assets/software/mark.svg' | relative_url }}" type="image/svg+xml">
-  <link rel="stylesheet" href="{{ '/assets/software/site.css' | relative_url }}?v=20261105-navbar-logo">
+  <link rel="stylesheet" href="{{ '/assets/software/site.css' | relative_url }}?v=20261105-navbar-background">
   <script src="{{ '/assets/software/search.js' | relative_url }}?v=20261029-english" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
   <header class="topbar">
     <div class="nav-wrap">
-      <a class="brand brand-logo" href="{{ '/' | relative_url }}" aria-label="GEXIS2D home"><img src="{{ '/assets/software/gexis-logo-hd.png' | relative_url }}" width="1254" height="1254" alt="GEXIS"></a>
+      <a class="brand brand-logo" href="{{ '/' | relative_url }}" aria-label="GEXIS2D home"><img src="{{ '/assets/software/gexis-logo-navbar.png' | relative_url }}" width="1254" height="1254" alt="GEXIS"></a>
       <details class="mobile-menu"><summary>Menu</summary><nav aria-label="Mobile navigation">{% for item in site.data.software_nav %}<a href="{{ item.url | relative_url }}">{{ item.title }}</a>{% if item.url == '/theory/' %}<a class="mobile-child" href="{{ '/theory/soil-model/' | relative_url }}">Soil Model</a>{% endif %}{% endfor %}<a href="{{ '/search/' | relative_url }}">Search documentation</a></nav></details>
       <nav class="desktop-nav" aria-label="Main navigation">{% for item in site.data.software_nav %}{% if item.url == '/theory/' %}<div class="nav-dropdown"><a class="nav-parent" href="{{ item.url | relative_url }}" {% if page.url contains '/theory/' %}aria-current="page"{% endif %}>{{ item.title }}<span class="dropdown-arrow" aria-hidden="true">▾</span></a><div class="nav-submenu"><a href="{{ '/theory/soil-model/' | relative_url }}" {% if page.url == '/theory/soil-model/' %}aria-current="page"{% endif %}>Soil Model</a></div></div>{% else %}<a href="{{ item.url | relative_url }}" {% if page.url == item.url %}aria-current="page"{% endif %}>{{ item.title }}</a>{% endif %}{% endfor %}</nav>
       <a class="search-link" href="{{ '/search/' | relative_url }}" aria-label="Search documentation">⌕ <span>Search</span></a>
