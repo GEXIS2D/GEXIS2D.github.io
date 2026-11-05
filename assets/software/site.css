@@ -149,3 +149,12 @@ main{min-height:calc(100vh - 145px)}.home-page{padding-bottom:64px}
   .case-panel .example-section h3 { font-size: 18px; }
   .case-empty { padding: 48px 8px; font-size: 14px; }
 }
+
+/* Keep case navigation beside the simulation, with a stacked mobile layout. */
+.case-showcase{display:grid;grid-template-columns:minmax(0,600px) minmax(0,1fr);gap:40px;align-items:start}
+.case-showcase .single-case{width:100%}
+.case-links{padding-top:43px}
+.case-links ul{margin:0;padding-left:22px}
+.case-links li{padding-left:4px;margin:0 0 22px;color:var(--ink)}
+.case-links a{color:var(--ink);font-size:18px;font-weight:700;line-height:1.5}
+@media(max-width:760px){.case-showcase{grid-template-columns:1fr;gap:24px}.case-links{padding-top:0}.case-links li{margin-bottom:14px}.case-links a{font-size:17px}}
