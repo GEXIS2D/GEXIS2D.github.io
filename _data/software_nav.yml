@@ -14,6 +14,10 @@
   label: Technical reference
   url: /documentation/
   description: Documentation index, version information and project resources
+- title: Publications
+  label: Journal articles
+  url: /publication/
+  description: Journal articles on FEM-DEM and constitutive modelling
 - title: Developers
   label: Software developers
   url: /contribute/
