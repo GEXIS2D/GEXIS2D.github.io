@@ -2,10 +2,6 @@
   label: Software download
   url: /download/
   description: Download GEXIS software
-- title: Tutorials
-  label: Tutorials and examples
-  url: /tutorials/
-  description: Example models, workflows and result checks
 - title: Theory
   label: Models and numerical methods
   url: /theory/
