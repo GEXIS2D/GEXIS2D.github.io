@@ -200,7 +200,7 @@ main{min-height:calc(100vh - 145px)}.home-page{padding-bottom:64px}
   align-items: center;
   justify-content: center;
   gap: 9px;
-  margin: 0 0 8px;
+  margin: 0 0 4px;
   font-size: 20px;
   font-weight: 700;
   line-height: 1.4;
@@ -221,7 +221,7 @@ main{min-height:calc(100vh - 145px)}.home-page{padding-bottom:64px}
 .case-columns .example-section {
   display: grid;
   grid-template-columns: minmax(0, 1fr);
-  grid-template-rows: calc(var(--model-height) * 1.2770701 + 4px);
+  grid-template-rows: calc(var(--model-height) * 1.0216561 + 4px);
   margin: 0;
 }
 .case-columns .example-video,
@@ -248,7 +248,7 @@ main{min-height:calc(100vh - 145px)}.home-page{padding-bottom:64px}
   grid-row: 2;
   align-self: start;
   margin: 0;
-  padding-top: calc(var(--model-height) * 0.2770701 + 4px);
+  padding-top: calc(var(--model-height) * 0.0216561 + 4px);
 }
 .case-columns .case-links li {
   margin-bottom: 12px;
