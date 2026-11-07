@@ -291,3 +291,39 @@ main{min-height:calc(100vh - 145px)}.home-page{padding-bottom:64px}
 .contact-links dt{margin-bottom:4px;color:var(--muted);font-size:13px}
 .contact-links dd{margin:0;font-size:17px;font-weight:700;overflow-wrap:anywhere}
 @media(max-width:600px){.contact-page{padding-top:32px;padding-bottom:48px}.contact-page h1{font-size:26px;margin-bottom:24px}.contact-details{grid-template-columns:1fr;gap:28px;padding:24px 0}.contact-person h2{font-size:22px}}
+
+.home-publications {
+  margin-top: 48px;
+  padding-top: 32px;
+  border-top: 1px solid var(--line);
+}
+.home-publications h2 {
+  margin: 0 0 20px;
+  font-size: 24px;
+  line-height: 1.4;
+}
+.home-publications ul {
+  margin: 0;
+  padding-left: 24px;
+}
+.home-publications li {
+  margin-bottom: 18px;
+  padding-left: 4px;
+  font-size: 15px;
+  line-height: 1.8;
+}
+.home-publications p {
+  margin: 0;
+}
+.home-publications li:last-child {
+  margin-bottom: 0;
+}
+@media (max-width: 560px) {
+  .home-publications {
+    margin-top: 36px;
+    padding-top: 24px;
+  }
+  .home-publications h2 {
+    font-size: 22px;
+  }
+}
