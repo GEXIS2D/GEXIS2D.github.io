@@ -238,7 +238,7 @@ main{min-height:calc(100vh - 145px)}.home-page{padding-bottom:64px}
   height: calc(var(--model-height) * 1.0018622);
 }
 #case-soil-wheel-interaction .example-video {
-  height: calc(var(--model-height) * 1.2770701);
+  height: calc(var(--model-height) * 1.0216561);
 }
 #case-biaxial-test .example-video {
   height: calc(var(--model-height) * 1.0029326);
