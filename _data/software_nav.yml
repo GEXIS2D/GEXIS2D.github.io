@@ -10,10 +10,6 @@
   label: Technical reference
   url: /documentation/
   description: Documentation index, version information and project resources
-- title: Developers
-  label: Software developers
-  url: /contribute/
-  description: GEXIS software developers and affiliations
 - title: Contact
   label: Contact Zhang Pin
   url: /contact/
